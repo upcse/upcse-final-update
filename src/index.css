@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}
+
+body {
+  background-color: #FFFFF0;
+  scroll-behavior: smooth;
+}
+
+.nav-gradient {
+  background: linear-gradient(90deg, #FF9933 0%, #FFFFFF 50%, #008000 100%);
+  position: sticky;
+  top: 0;
+  z-index: 40;
+}
+
+/* Remove white shine from marquee */
+.marquee-gradient {
+  background: linear-gradient(90deg, #FF9933 0%, #0000FF 50%, #008000 100%);
+  margin-top: 0.25rem;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Optimize image loading */
+img {
+  loading: lazy;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+.animate-blink {
+  animation: blink 2s infinite;
+}
+
+/* Header height adjustment */
+.header-container {
+  height: calc(27.27vh); /* 3/11 of viewport height */
+}
+
+/* Core team member image sizes */
+.core-team-image {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.core-team-image-primary {
+  max-width: 400px;
+}
+
+.core-team-image-secondary {
+  max-width: 350px;
+}
+
+.core-team-image-tertiary {
+  max-width: 300px;
+}
+
+/* Table styles */
+.data-table {
+  @apply min-w-full divide-y divide-gray-200;
+}
+
+.data-table th {
+  @apply px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider;
+}
+
+.data-table td {
+  @apply px-6 py-4 whitespace-nowrap text-sm text-gray-500;
+}
+
+.data-table tr:nth-child(even) {
+  @apply bg-gray-50;
+}
+
+.data-table tr:hover {
+  @apply bg-gray-100;
+}
+
+/* Gallery styles */
+.gallery-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
+}
+
+.gallery-item {
+  @apply relative overflow-hidden rounded-lg shadow-lg;
+}
+
+.gallery-item img {
+  @apply w-full h-64 object-cover transition-transform duration-300;
+}
+
+.gallery-item:hover img {
+  @apply transform scale-105;
+}
+
+.gallery-overlay {
+  @apply absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4;
+}
+
+/* District secretary card styles */
+.secretary-card {
+  @apply bg-white rounded-lg shadow-lg overflow-hidden;
+}
+
+.secretary-card img {
+  @apply w-full h-48 object-cover;
+}
+
+.secretary-info {
+  @apply p-4;
+}
+
+.secretary-name {
+  @apply text-xl font-bold text-gray-900;
+}
+
+.secretary-title {
+  @apply text-sm text-gray-600;
+}
+
+.secretary-contact {
+  @apply mt-2 space-y-1 text-sm text-gray-600;
+}
+
+/* Smooth image loading */
+.image-loading {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.image-loaded {
+  opacity: 1;
+}

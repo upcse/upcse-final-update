@@ -1,2 +1,2 @@
-# upcse-final-update
-final updated upcse website repo
+# upcse-final
+final-updated-upcse.info
