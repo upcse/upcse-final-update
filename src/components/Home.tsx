@@ -18,7 +18,7 @@ const mockCoreTeamMembers: Secretary[] = [
   {
     id: '1',
     name: 'Shri Anandeshwar Panday',
-    designation: 'General Secretary UPCSE',
+    designation: 'Chief Patron - UPCSE',
     photo_url: ASSET_PATHS.coreTeam.member1,
     flip_card_content: {
       positions: [
@@ -33,7 +33,7 @@ const mockCoreTeamMembers: Secretary[] = [
   {
     id: '2',
     name: 'Smt. Neelu Mishra',
-    designation: 'TBA - UPCSE',
+    designation: 'President - UPCSE',
     photo_url: ASSET_PATHS.coreTeam.member2,
     flip_card_content: {
       positions: [
@@ -50,7 +50,7 @@ const mockCoreTeamMembers: Secretary[] = [
   {
     id: '3',
     name: 'Shri Pankaj Pandey',
-    designation: 'TBA - UPCSE',
+    designation: 'General Secretary - UPCSE',
     photo_url: ASSET_PATHS.coreTeam.member3,
     flip_card_content: {
       positions: [
